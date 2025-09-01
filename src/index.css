@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand: 50 116 255;
+}
+
+.btn {
+  @apply px-4 py-2 rounded-2xl shadow-soft hover:shadow md:transition-all md:duration-300;
+  background: rgb(var(--brand));
+  color: white;
+}
+.card {
+  @apply bg-white dark:bg-gray-900 rounded-2xl p-4 shadow-soft border border-gray-100 dark:border-gray-800;
+}
+.input {
+  @apply w-full border border-gray-200 dark:border-gray-700 rounded-xl px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-gray-900;
+}
+.select {
+  @apply border border-gray-200 dark:border-gray-700 rounded-xl px-3 py-2 bg-white dark:bg-gray-900;
+}
+.link {
+  @apply text-blue-600 hover:underline;
+}
+
+body {
+  @apply text-gray-900 dark:text-gray-100;
+}
